@@ -10,7 +10,7 @@ namespace Bloxstrap.Models
         public string BootstrapperTitle { get; set; } = App.ProjectName;
         public string BootstrapperIconCustomLocation { get; set; } = "";
         public Theme Theme { get; set; } = Theme.Default;
-        public bool CheckForUpdates { get; set; } = true;
+        public bool CheckForUpdates { get; set; } = false;
         public bool CreateDesktopIcon { get; set; } = true;
         public bool ConfirmLaunches { get; set; } = false;
         public string Locale { get; set; } = "nil";
@@ -25,6 +25,7 @@ namespace Bloxstrap.Models
         public bool UseDiscordRichPresence { get; set; } = true;
         public bool HideRPCButtons { get; set; } = true;
         public bool ShowServerDetails { get; set; } = false;
+        public bool MultiInstanceLaunching { get; set; } = false;
         public ObservableCollection<CustomIntegration> CustomIntegrations { get; set; } = new();
 
         // mod preset configuration
