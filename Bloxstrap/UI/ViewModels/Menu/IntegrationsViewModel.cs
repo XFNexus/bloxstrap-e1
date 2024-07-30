@@ -113,22 +113,7 @@ namespace Bloxstrap.UI.ViewModels.Menu
         public bool MultiInstanceLaunchingEnabled
         {
             get => App.Settings.Prop.MultiInstanceLaunching;
-            set
-            {
-                App.Settings.Prop.MultiInstanceLaunching = value;
-
-                if (!value)
-                {
-                    FixTeleportsEnabled = value;
-                    OnPropertyChanged(nameof(FixTeleportsEnabled));
-                }
-            }
-        }
-
-        public bool FixTeleportsEnabled
-        {
-            get => App.Settings.Prop.FixTeleports;
-            set => App.Settings.Prop.FixTeleports = value;
+            set => App.Settings.Prop.MultiInstanceLaunching = value;
         }
 
         public bool DisableAppPatchEnabled
